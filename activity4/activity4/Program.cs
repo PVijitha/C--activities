@@ -1,0 +1,14 @@
+﻿Console.WriteLine("Enter your date of birth");
+DateTime dob = DateTime.Parse(Console.ReadLine());
+TimeSpan temp = DateTime.Now.Subtract(dob);
+var temp2 = DateTime.Now.Year - dob.Year;
+Console.WriteLine("Days");
+Console.WriteLine(temp.Days);
+Console.WriteLine("Hours");
+Console.WriteLine(temp.Days * 24);
+Console.WriteLine("Month");
+Console.WriteLine(temp2 * 12);
+Console.WriteLine("Week");
+Console.WriteLine(temp.Days/7);
+Console.WriteLine("year");
+Console.WriteLine(temp2);
